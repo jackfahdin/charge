@@ -1,0 +1,17 @@
+
+cc_binary {
+    name: "charged",
+
+    srcs: ["charged.c"],
+
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+        "libatci",
+    ],
+
+    init_rc: ["charged.rc"],
+    proprietary: true,
+
+}
